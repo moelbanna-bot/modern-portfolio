@@ -1,27 +1,11 @@
 import { useState, lazy, Suspense } from "react";
-import {
-  Container,
-  Navbar,
-  Nav,
-  Row,
-  Col,
-  Card,
-  Form,
-  Button,
-} from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
   faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faHtml5,
-  faCss3Alt,
-  faJs,
-  faReact,
-  faNode,
 } from "@fortawesome/free-brands-svg-icons";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -31,11 +15,6 @@ const About = lazy(() => import("./components/About.tsx"));
 const Skills = lazy(() => import("./components/Skills.tsx"));
 const Projects = lazy(() => import("./components/Projects.tsx"));
 const Contact = lazy(() => import("./components/Contact.tsx"));
-
-const scrollToSection = (id: string) => {
-  const element = document.getElementById(id);
-  element?.scrollIntoView({ behavior: "smooth" });
-};
 
 const scrollVariants = {
   hidden: { opacity: 0, y: 20 },
