@@ -1,8 +1,12 @@
-import { motion } from 'framer-motion';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { motion } from "framer-motion";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -29,21 +33,36 @@ const Contact = () => {
               <div className="mb-4">
                 <p className="mb-2">
                   <FontAwesomeIcon icon={faEnvelope} className="me-2" />
-                  Email: contact@example.com
+                  Email: moelbanna880@gmail.com
                 </p>
                 <p className="mb-2">
                   <FontAwesomeIcon icon={faPhone} className="me-2" />
-                  Phone: +1 (123) 456-7890
+                  Phone: +20 1011677988
                 </p>
               </div>
               <div className="social-links mb-4">
-                <a href="#" target="_blank" rel="noopener noreferrer" className="me-3">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="me-3 text-dark"
+                >
                   <FontAwesomeIcon icon={faGithub} size="2x" />
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer" className="me-3">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="me-3 text-dark"
+                >
                   <FontAwesomeIcon icon={faLinkedin} size="2x" />
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-dark"
+                >
                   <FontAwesomeIcon icon={faTwitter} size="2x" />
                 </a>
               </div>
