@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { motion } from "framer-motion";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 interface Project {
   title: string;
@@ -15,29 +15,35 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Interactive Dashboard',
-    description: 'A dynamic dashboard with real-time data visualization, interactive charts, and customizable widgets using jQuery.',
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&h=400&q=80',
-    technologies: ['jQuery', 'HTML5', 'CSS3', 'Chart.js'],
-    liveUrl: 'https://dashboard-demo.com',
-    githubUrl: 'https://github.com/yourusername/interactive-dashboard'
+    title: "Interactive Dashboard",
+    description:
+      "A dynamic dashboard with real-time data visualization, interactive charts, and customizable widgets using jQuery.",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&h=400&q=80",
+    technologies: ["jQuery", "HTML5", "CSS3", "Chart.js"],
+    liveUrl: "https://b-dashboard.netlify.app/",
+    githubUrl: "https://github.com/moelbanna-bot/dynamic-dashboard",
   },
   {
-    title: 'Content Management System',
-    description: 'A user-friendly CMS with drag-and-drop functionality, rich text editing, and dynamic content updates.',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&h=400&q=80',
-    technologies: ['jQuery', 'Bootstrap', 'MySQL', 'PHP'],
-    liveUrl: 'https://cms-demo.com',
-    githubUrl: 'https://github.com/yourusername/jquery-cms'
+    title: "Tic Tac Toe Game",
+    description:
+      "An interactive Tic Tac Toe game with a modern UI, player vs player mode, and score tracking functionality.",
+    image:
+      "https://images.unsplash.com/photo-1553481187-be93c21490a9?auto=format&fit=crop&w=600&h=400&q=80",
+    technologies: ["React", "TypeScript", "CSS3"],
+    liveUrl: "https://xo-game2.netlify.app/",
+    githubUrl: "https://github.com/moelbanna-bot/Tic-Tac_Toe",
   },
   {
-    title: 'E-learning Platform',
-    description: 'An interactive learning platform with quiz modules, progress tracking, and multimedia content delivery.',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&h=400&q=80',
-    technologies: ['jQuery', 'AJAX', 'Bootstrap', 'PHP'],
-    liveUrl: 'https://elearning-demo.com',
-    githubUrl: 'https://github.com/yourusername/elearning-platform'
-  }
+    title: "E-learning Platform",
+    description:
+      "An interactive learning platform with quiz modules, progress tracking, and multimedia content delivery.",
+    image:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&h=400&q=80",
+    technologies: ["jQuery", "AJAX", "Bootstrap"],
+    liveUrl: "https://learning-easy.netlify.app/",
+    githubUrl: "https://github.com/moelbanna-bot/E-Learning",
+  },
 ];
 
 const Projects = () => {
@@ -69,10 +75,7 @@ const Projects = () => {
                     <Card.Text>{project.description}</Card.Text>
                     <div className="mb-3">
                       {project.technologies.map((tech, i) => (
-                        <span
-                          key={i}
-                          className="badge bg-primary me-2 mb-2"
-                        >
+                        <span key={i} className="badge bg-primary me-2 mb-2">
                           {tech}
                         </span>
                       ))}
@@ -85,7 +88,10 @@ const Projects = () => {
                           rel="noopener noreferrer"
                           className="btn btn-primary me-2"
                         >
-                          <FontAwesomeIcon icon={faExternalLinkAlt} className="me-2" />
+                          <FontAwesomeIcon
+                            icon={faExternalLinkAlt}
+                            className="me-2"
+                          />
                           Live Demo
                         </a>
                       )}
