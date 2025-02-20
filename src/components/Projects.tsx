@@ -61,7 +61,7 @@ const projects: Project[] = [
       "A collaborative task management application with real-time updates, drag-and-drop interface, and team collaboration features.",
     image:
       "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&w=600&h=400&q=80",
-    technologies: ["React", "Bootstrap", "MySQL", "JavaScript"],
+    technologies: ["React", "Bootstrap", "JavaScript"],
     liveUrl: "https://task-master.netlify.app/",
     githubUrl: "https://github.com/moelbanna-bot/task-master",
   },
@@ -71,7 +71,7 @@ const projects: Project[] = [
       "A modern real estate platform featuring property listings, advanced search filters, and interactive map integration.",
     image:
       "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&h=400&q=80",
-    technologies: ["jQuery", "Bootstrap", "MySQL", "Python"],
+    technologies: ["jQuery", "Bootstrap"],
     liveUrl: "https://dream-homes.netlify.app/",
     githubUrl: "https://github.com/moelbanna-bot/dream-homes",
   },
