@@ -44,6 +44,37 @@ const projects: Project[] = [
     liveUrl: "https://learning-easy.netlify.app/",
     githubUrl: "https://github.com/moelbanna-bot/E-Learning",
   },
+  {
+    title: "Modern E-commerce Platform",
+    description:
+      "A full-featured e-commerce platform with product catalog, shopping cart, user authentication, and payment integration.",
+    image:
+      "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=600&h=400&q=80",
+    technologies: ["React", "Tailwind CSS"],
+    liveUrl: "https://lumiere-boutique.netlify.app/",
+    githubUrl:
+      "https://github.com/moelbanna-bot/Lumiere-Boutique-E-commerce-website-",
+  },
+  {
+    title: "Task Management App",
+    description:
+      "A collaborative task management application with real-time updates, drag-and-drop interface, and team collaboration features.",
+    image:
+      "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?auto=format&fit=crop&w=600&h=400&q=80",
+    technologies: ["React", "Bootstrap", "MySQL", "JavaScript"],
+    liveUrl: "https://task-master.netlify.app/",
+    githubUrl: "https://github.com/moelbanna-bot/task-master",
+  },
+  {
+    title: "Real Estate Listings",
+    description:
+      "A modern real estate platform featuring property listings, advanced search filters, and interactive map integration.",
+    image:
+      "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=600&h=400&q=80",
+    technologies: ["jQuery", "Bootstrap", "MySQL", "Python"],
+    liveUrl: "https://dream-homes.netlify.app/",
+    githubUrl: "https://github.com/moelbanna-bot/dream-homes",
+  },
 ];
 
 const Projects = () => {
